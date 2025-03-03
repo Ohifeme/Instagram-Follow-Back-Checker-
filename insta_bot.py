@@ -52,8 +52,9 @@ def not_followbk():
     for i in followings:
         if i not in followers:
             unfriendly.append([i,followings[i]])
-            print(followings[i][0]," ",followings[i][1])
-    print(unfriendly)
+            print("Username:",i," Name:",followings[i][0],"  userID:",followings[i][1],"\n")
+    return unfriendly
+
             
 def remove_from_following(acct_id):
     """
